@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FuzzCell" rowHeight="275" id="7BZ-sn-pPj" customClass="FuzzTableViewCell" customModule="FuzzTestRefactor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FuzzCell" rowHeight="275" id="7BZ-sn-pPj" customClass="FuzzTableViewCell" customModule="FuzzTestRefactor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="275"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7BZ-sn-pPj" id="WhM-4h-LQO">
@@ -135,12 +135,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="na" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-R1-vdV">
-                                <rect key="frame" x="67" y="250" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="na" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-R1-vdV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eNx-e7-ygC" firstAttribute="bottom" secondItem="gA7-R1-vdV" secondAttribute="bottom" id="FCB-xd-tMW"/>
+                            <constraint firstItem="gA7-R1-vdV" firstAttribute="leading" secondItem="eNx-e7-ygC" secondAttribute="leading" id="elm-1T-tBX"/>
+                            <constraint firstItem="gA7-R1-vdV" firstAttribute="top" secondItem="eNx-e7-ygC" secondAttribute="top" id="oyz-KH-skV"/>
+                            <constraint firstItem="eNx-e7-ygC" firstAttribute="trailing" secondItem="gA7-R1-vdV" secondAttribute="trailing" id="sfR-Yk-pUZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eNx-e7-ygC"/>
                     </view>
                     <connections>
@@ -172,7 +177,7 @@
         <!--Web View Controller-->
         <scene sceneID="Qi9-f5-Wc0">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" id="jmt-Hw-zkK" customClass="WebViewController" customModule="FuzzTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="jmt-Hw-zkK" customClass="WebViewController" customModule="FuzzTestRefactor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6UZ-fm-WjY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
